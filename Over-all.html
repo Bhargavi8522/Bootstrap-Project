@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            position: fixed;
+            width: 100%;
+            padding: 8px;
+        }
+
+        .home {
+            background-image: url("images/Homeimg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+        }
+
+        .hbox {
+            display: flex;
+            backdrop-filter: blur(5px);
+            font-style: oblique;
+            text-align: center;
+            width: 550px;
+            height: fit-content;
+            font-size: 25px;
+            padding-top: 15px;
+            padding-bottom: 10px;
+        }
+
+        .hcard {
+            padding: 40px;
+        }
+
+        h2 {
+            background-color: rgb(70, 70, 70);
+            text-align: center;
+            color: white;
+            padding: 10px;
+            margin-top: 15px;
+        }
+
+        .abt-box {
+            display: flex;
+            justify-content: center;
+            background-color: pink;
+            padding: 60px;
+            font-size: 20px;
+        }
+
+        .bottom-up {
+            text-align: center;
+            background-color: #edd0aa;
+            margin-bottom: 50px;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: #e8bc82;
+            text-align: center;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body style="width: 100%;">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary color:green">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <i class="fa fa-registered" aria-hidden="true" alt="Logo" width="30" height="24"
+                        class="d-inline-block align-text-top"></i>My Shopping Studio
+                </a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                        style="width: 350px;">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#AboutUs">AboutUs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Shop">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ContactUs">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-bookmark-heart"></i>liked</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-cart2"></i>Cart</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person-circle"></i>Profile</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="Home">
+        <div style="width: 100%; ">
+            <div class="home">
+                <div class="hbox" style="color: snow; margin-top: 300px;">
+                    <p>What you were is how you <br> present yourself to the world <br> especially to day,when human
+                        <br>
+                        contacts are so quick. <br> Fashion is instant languages.<br>
+                    </p>
+                </div>
+                <div class="hbox" style="margin-left: 500px; margin-top: 450px;color:snow;">
+                    <p>The Feminine urge to were saree.<br>Even in the smallest of occasions,<br>Embellished with
+                        oxidised
+                        jewellery.<br>Dress the hair with fresh mogra garland,<br>and simple makeover to add a
+                        special<br>Touch
+                        to the elegant look.</p>
+                </div>
+            </div>
+            <div style="width: 100%;">
+                <div class="d-flex flex-row hcard" style="gap: 30px;">
+                    <div class="card" style="height: fit-content;">
+                        <div class="card-body">
+                            <video width="100%" height="300px" controls autoplay replay muted>
+                                <source src="vedios/v10.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+
+                    <div class="card" style="height: fit-content;">
+                        <div class="card-body">
+                            <video width="100%" height="300xp" controls autoplay replay muted>
+                                <source src="vedios/v1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+
+                    <div class="card" style="height: fit-content;">
+                        <div class="card-body">
+                            <video width="100%" height="300px" controls autoplay replay muted>
+                                <source src="vedios/v7.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div style="width: 100%;">
+                <div class="d-flex flex-row hcard" style="gap: 30px;">
+                    <div class="card" style=" height: fit-content;">
+                        <div class="card-body">
+                            <video width="100%" height="300px" controls autoplay replay muted>
+                                <source src="vedios/v4.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+
+                    <div class="card" style="height: fit-content;">
+                        <div class="card-body">
+                            <video width="100%" height="300px" controls autoplay replay muted>
+                                <source src="vedios/v2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+
+                    <div class="card" style="height: fit-content;">
+                        <div class="card-body">
+                            <video width="100%" height="300px" controls autoplay replay muted>
+                                <source src="vedios/v9.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 100%;">
+                <div class="d-flex flex-row hcard" style="gap: 30px;">
+                    <div class="card" style="height:fit-content;">
+                        <div class="card-body">
+                            <video width="100%" height="300px" controls autoplay replay muted>
+                                <source src="vedios/v6.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+
+                    <div class="card" style="height: fit-content;">
+                        <div class="card-body">
+                            <video width="100%" height="300px" controls autoplay replay muted>
+                                <source src="vedios/v8.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+
+                    <div class="card" style=" height: fit-content;">
+                        <div class="card-body">
+                            <video width="100%" height="300px" controls autoplay replay muted>
+                                <source src="vedios/v3.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+
+                    <div class="card" style="height:fit-content;">
+                        <div class="card-body">
+                            <video width="100%" height="300px" controls autoplay replay muted>
+                                <source src="vedios/v5.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="AboutUs">
+        <div style="width: 100%; height: 100vh;">
+            <h2>ABOUT US</h2>
+            <div class="abt-box">
+                <div class="card" style="width: 28rem;">
+                    <div class="card-body">
+                        <img src="images/abt.gif" width="100%" height="500px" alt="">
+                    </div>
+                </div>
+                <div class="card" style="width: 40rem;">
+                    <div class="card-body">
+                        <h3>Let's Get Comfortable...!</h3><br>
+                        At My Shopping Studio, we believe that shopping should be a comfortable and enjoyable
+                        experience.
+                        Our online
+                        boutique is designed to provide you with an easy and hassle-free shopping experience. You
+                        can
+                        browse
+                        our
+                        collection from the comfort of your home and choose from a wide range of designs and styles.
+                        We
+                        offer a variety
+                        of payment options and provide fast and reliable shipping. Our team is always available to
+                        assist
+                        you with any
+                        questions or concerns you may have. Shop with us and experience the joy of wearing beautiful
+                        and
+                        unique Indian
+                        traditional wear.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Shop">
+        <h2>SHOP NOW.!</h2>
+        <!-- <div> -->
+            <div class="row d-flex" style="padding-left: 100px; padding-top: 40px;">
+                <div id="carouselExampleSlidesOnly" class="carousel slide col" style="display: flex; justify-content: center; align-items: center;" data-bs-ride="carousel">
+                    <div class="carousel-inner" style="width: 300px; height: 500px;">
+                        <div class="carousel-item active" data-bs-interval="1000">
+                            <img src="images/img1.jpg"  height="500px" class="d-block" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1000">
+                            <img src="images/img2.jpg"  height="500px" class="d-block" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1000">
+                            <img src="images/img3.jpg"  height="500px" class="d-block" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div id="carouselExampleSlidesOnly" class="carousel slide col" style="display: flex; justify-content: center; align-items: center;" data-bs-ride="carousel" data-bs-ride="carousel">
+                    <div class="carousel-inner" style="width: 300px; height: 500px;">
+                        <div class="carousel-item active" data-bs-interval="1000">
+                            <img src="images/img4.jpg" height="500px" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1000">
+                            <img src="images/img5.jpg" height="500px" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1000">
+                            <img src="images/img6.jpg" height="500px" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div id="carouselExampleSlidesOnly" class="carousel slide col" style="display: flex; justify-content: center; align-items: center;" data-bs-ride="carousel" data-bs-ride="carousel">
+                    <div class="carousel-inner" style="width: 300px; height: 500px;">
+                        <div class="carousel-item active" data-bs-interval="1000">
+                            <img src="images/img7.jpg" height="500px" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1000">
+                            <img src="images/img8.jpg" height="500px" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1000">
+                            <img src="images/img9.jpg" height="500px" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-md-center" style="padding-bottom: 40px; padding-left: 100px; padding-top: 20px;">
+                <div id="carouselExampleSlidesOnly" class="carousel slide col" style="display: flex; justify-content: center; align-items: center;" data-bs-ride="carousel" data-bs-ride="carousel">
+                    <div class="carousel-inner" style="width: 300px; height: 500px;">
+                        <div class="carousel-item active" data-bs-interval="1000">
+                            <img src="images/img10.jpg" height="550px" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1000">
+                            <img src="images/img11.jpg" height="550px" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1000">
+                            <img src="images/img12.jpg" height="500px" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div id="carouselExampleSlidesOnly" class="carousel slide col" style="display: flex; justify-content: center; align-items: center;" data-bs-ride="carousel" data-bs-ride="carousel">
+                    <div class="carousel-inner" style="width: 300px; height: 500px;">
+                        <div class="carousel-item active" data-bs-interval="1000">
+                            <img src="images/img13.jpg" height="500px" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1000">
+                            <img src="images/img14.jpg" height="500px" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1000">
+                            <img src="images/img15.jpg"  height="500px" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div id="carouselExampleSlidesOnly" class="carousel slide col" style="display: flex; justify-content: center; align-items: center;" data-bs-ride="carousel" data-bs-ride="carousel">
+                    <div class="carousel-inner" style="width: 300px; height: 500px;">
+                        <div class="carousel-item active" data-bs-interval="1000">
+                            <img src="images/img16.jpg" height="500px" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1000">
+                            <img src="images/img17.jpg" height="500px" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1000">
+                            <img src="images/img18.jpg" height="500px" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+    </section>
+
+    <section id="ContactUs">
+        <h2>CONTACT US</h2>
+        <h4>We would love to hear from you! Please feel free to reach out to us with any questions, comments,
+            or concerns you may have. Our dedicated customer service team is here to help you in any way we can.
+        </h4>
+        <div class="abt-box">
+            <div class="card" style="width: 20rem;">
+                <div class="card-body">
+                    <img src="images/cntimg.jpg" width="100%" height="100%" alt="">
+                </div>
+            </div>
+            <div class="card" style="width: 40rem;">
+                <div class="card-body">
+                    <h3>Visit Our Online Store</h3><br>
+                    <p>We are an Online Boutique Clothing Store.</p>
+                    <p>Also,we don't have any physical location.</p><br>
+
+                    <label for="">First Name:</label>
+                    <input type="text" placeholder="Enter First Name"><br>
+                    <label for="">Second Name:</label>
+                    <input type="text" placeholder="Enter Second Name"><br>
+                    <label for="">E-Mail:</label>
+                    <input type="email" placeholder="Enter E-Mail"><br>
+                    <label for="">Leave Us a Mesg..</label>
+                    <input type="" placeholder="Enter "><br>
+                    <button class="btn btn-outline-success" type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="lookbook">
+        <h2>Lookbook</h2>
+        <h1 style="text-align: center;">Explore Our Collection</h1>
+        <p style="font-size: 18px; text-align: center;">Discover unique designs and colors that are gentle on your skin.
+            Our collection features traditional Indian weaves and drapes that are sure to impress.</p><br>
+        <div class="d-flex flex-row justify-content-center align-items-center hcard gap-4">
+            <div class="card" style="width: 300px; height: 550px;">
+                <div class="card-body">
+                    <img src="images/limg1.jpg" width="100%" height="500px" alt="">
+                </div>
+            </div>
+            <div class="card" style="width: 300px; height: 550px;">
+                <div class="card-body">
+                    <img src="images/limg2.jpg" width="100%" height="500px" alt="">
+                </div>
+            </div>
+            <div class="card" style="width: 300px; height: 550px;">
+                <div class="card-body">
+                    <img src="images/limg3.jpg" width="100%" height="500px" alt="">
+                </div>
+            </div>
+            <div class="card" style="width: 300px; height: 550px;">
+                <div class="card-body">
+                    <img src="images/limg4.jpg" width="100%" height="500px" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center align-items-center hcard gap-4">
+            <div class="card" style="width: 300px; height: 550px;">
+                <div class="card-body">
+                    <img src="images/limg5.jpg" width="100%" height="500px" alt="">
+                </div>
+            </div>
+            <div class="card" style="width: 300px; height: 550px;">
+                <div class="card-body">
+                    <img src="images/limg6.jpg" width="100%" height="500px" alt="">
+                </div>
+            </div>
+            <div class="card" style="width: 300px; height: 550px;">
+                <div class="card-body">
+                    <img src="images/limg7.jpg" width="100%" height="500px" alt="">
+                </div>
+            </div>
+            <div class="card" style="width: 300px; height: 550px;">
+                <div class="card-body">
+                    <img src="images/limg8.jpg" width="100%" height="500px" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="FAQ">
+        <h2>FAQ</h2>
+        <div style="background-color:lightgrey;">
+            <p style="font-size: 25px;">Here are answers to some of the most commonly asked questions about My
+                Shopping Studio and our online
+                boutiqueclothing store.<br>
+                If you can't find the answer you're looking for, please don't hesitate to contact us.
+            </p>
+            <h1 style="text-align: center;">Frequently asked questions</h1>
+            <div style="text-align: center;">
+                <div class="dropdown-center" style=" padding: 20px;">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        How do I add a new question & answer?
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">1. Manage FAQs from your site dashboard or in the
+                                Editor.</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">2. Add a new question & answer.</a></li>
+                        <li><a class="dropdown-item" href="#">3. Assign your FAQ to a category.</a></li>
+                        <li><a class="dropdown-item" href="#">4. Save and publish.</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-center" style=" padding: 20px;">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        How do I edit or remove the 'Frequently Asked Questions' title?
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"> You can edit the title from the FAQ 'Settings' tab in the
+                                Editor.
+                                To remove the title from your mobile app go to the 'Site & App' tab in your Owner's app
+                                and
+                                customize.</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dropdown-center" style=" padding: 20px;">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Can I insert an image, video, or GIF in my FAQ?
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p> Yes. To add media follow these steps: </p>
+                        <li><a class="dropdown-item" href="#">1. Manage FAQs from your site dashboard or in the
+                                Editor.</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">2. Create a new FAQ or edit an existing one.</a></li>
+                        <li><a class="dropdown-item" href="#">3. From the answer text box click on the video, image or
+                                GIF
+                                icon.</a></li>
+                        <li><a class="dropdown-item" href="#">4. Add media from your library and save.</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Facebook">
+        <h2>Facebook</h2>
+        <div class="abt-box">
+            <div class="card" style="width: 28rem;">
+                <div class="card-body">
+                    <img src="images/fbimg.jpg" width="100%" alt="">
+                </div>
+            </div>
+            <div class="card" style="width: 50rem;">
+                <div class="card-body">
+                    <h1 style="text-align: center;">SIGN-IN
+                        <hr>
+                    </h1>
+                    <label for=" ">First Name:</label>
+                    <input type="text" size="50px" placeholder="Enter First Name"><br><br>
+                    <label for=" ">Last Name:</label>
+                    <input type="text" size="52px" placeholder="Enter Surname"><br><br>
+                    <lable for=" ">Date Of Birth:</lable>
+                    <input type="date" size="60px" placeholder="Enter DD/MM/YYYY"><br><br>
+                    <lable for=" ">Gender:</lable>
+                    <input type="radio" value="Female" name="gender">Female
+                    <input type="radio" value="Male" name="gender">Male
+                    <input type="radio" value="Others" name="gender">Others <br><br>
+                    <label for=" ">E-Mail:</label>
+                    <input type="e-mail" size="54px" placeholder="Entere E-Mail"><br><br>
+                    <lable for=" ">Password:</lable>
+                    <input type="password" size="52px" placeholder="Enter Password"><br><br>
+                    <label for=" ">Ph Number:</label>
+                    <input type="Ph no" size="50px" placeholder="Enter Number"><br><br>
+
+                    <button class="btn btn-outline-success" type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Instagram">
+        <h2>Instagram</h2>
+        <div class="abt-box">
+            <div class="card" style="width: 28rem;">
+                <div class="card-body">
+                    <img src="images/instimg.jpg" width="100%" alt="">
+                </div>
+            </div>
+            <div class="card" style="width: 50rem;">
+                <div class="card-body">
+                    <h1 style="text-align: center;">SIGN-IN
+                        <hr>
+                    </h1>
+                    <label for=" ">First Name:</label>
+                    <input type="text" size="50px" placeholder="Enter First Name"><br><br>
+                    <label for=" ">Last Name:</label>
+                    <input type="text" size="52px" placeholder="Enter Surname"><br><br>
+                    <lable for=" ">Date Of Birth:</lable>
+                    <input type="date" size="60px" placeholder="Enter DD/MM/YYYY"><br><br>
+                    <lable for=" ">Gender:</lable>
+                    <input type="radio" value="Female" name="gender">Female
+                    <input type="radio" value="Male" name="gender">Male
+                    <input type="radio" value="Others" name="gender">Others <br><br>
+                    <label for=" ">E-Mail:</label>
+                    <input type="e-mail" size="54px" placeholder="Entere E-Mail"><br><br>
+                    <lable for=" ">Password:</lable>
+                    <input type="password" size="52px" placeholder="Enter Password"><br><br>
+                    <label for=" ">Ph Number:</label>
+                    <input type="Ph no" size="50px" placeholder="Enter Number"><br><br>
+
+                    <button class="btn btn-outline-success" type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Store Policy">
+        <h2>Store Policy</h2>
+        <div class="d-flex flex-row">
+            <div class="card" style="width: 100rem;">
+                <div class="card-body">
+                    <h3>Customer Care:</h3>
+                    I'm a customer care section. I'm a great place to write a long text about your company and your
+                    services,
+                    and, most importantly, how to contact your store with queries.<br>
+                    Writing a detailed customer care policy
+                    is a great way to build trust and reassure your customers that they can buy with confidence.
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-row">
+            <div class="card" style="width: 100rem;">
+                <div class="card-body">
+                    <h3>Privacy & Safety:</h3>
+                    I'm a privacy & safety policy section. I'm a great place to inform your customers about how you use,
+                    store, and protect their personal information.<br>
+                    Add details such as how you use third-party banking to
+                    verify payment, the way you collect data or when will you contact users after their purchase was
+                    completed successfully.<br>
+                    Your user's privacy is of the highest importance to your business, so take the time to write an
+                    accurate
+                    and detailed policy.<br>
+                    Use straightforward language to gain their trust and make sure they keep coming back to your site!
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-row">
+            <div class="card" style="width: 100rem;">
+                <div class="card-body">
+                    <h3>Wholesale Inquiries:</h3>
+                    I'm a wholesale inquiries section. I'm a great place to inform other retailers about how they can
+                    sell
+                    your stunning products.<br>
+                    Use plain language and give as much information as possible in order to promote
+                    your business and take it to the next level!
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-row">
+            <div class="card" style="width: 100rem;">
+                <div class="card-body">
+                    <h3>Payment Methods</h3>
+                    <ul>
+                        <li>Credit / Debit Cards</li>
+                        <li>PAYPAL</li>
+                        <li>Offline Payments</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Shipping & Returns" style="height: 100vh;">
+        <h2>Shipping & Returns</h2>
+        <div class="card hcard" style="width: 100%; background-color: rgb(210, 239, 250);">
+            <div class="card-body">
+                <h3>Shipping Policy:</h3>
+                <p style="font-size: 20px;">We offer free shipping for all orders above $100. For orders below $100, a
+                    flat rate of $10 will be
+                    charged.<br>
+                    We use reliable and trusted shipping carriers to ensure that your order reaches you in a safe and
+                    timely
+                    manner. <br>We strive to process and ship your order as quickly as possible. Once your order has
+                    been
+                    shipped,
+                    you will receive a tracking number to track your shipment. <br>If you have any questions or concerns
+                    about
+                    your
+                    shipment, please contact us and we will be happy to assist you.</p>
+            </div>
+        </div>
+        <div class="card hcard" style="width: 100%; background-color:  rgb(210, 239, 250);">
+            <div class="card-body">
+                <h3>Return & Exchange Policy:</h3>
+                <p style="font-size: 20px;">We want you to be completely satisfied with your purchase. If for any reason
+                    you are not satisfied,
+                    we
+                    offer
+                    hassle-free returns and exchanges.<br> You can initiate a return or exchange within 14 days of
+                    receiving
+                    your
+                    order. The returned item must be in its original condition and packaging. <br>
+                    Once we receive the returned
+                    item,
+                    we will process your refund within 7 days. If you would like to exchange an item, please contact us
+                    and
+                    we
+                    will be happy to assist you.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="bottom-up">
+        <h2>Stay Updated</h2><br>
+        <label for="">E-Mail:</label>
+        <input type="email" style="width: 500px;" placeholder="Enter E-Mail">
+        <p><a href="#">Subscribe now</a></p>
+    </div>
+
+    <footer>
+        <a href="#Home">Home</a>
+        <a href="#About Us">About Us</a>
+        <a href="#Shop">Shop</a>
+        <a href="#Lookbook">Lookbook</a>
+        <a href="#Facebook">Facebook</a>
+        <a href="#Instagram">Instagram</a>
+        <a href="#FAQ">FAQ</a>
+        <a href="#Store Policy">Store Policy</a>
+        <a href="#Shipping & Returns">Shipping & Returns</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
